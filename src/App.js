@@ -17,9 +17,9 @@ function App() {
     {/* PageNavBar is above routes so that it can be displayed on each page */}
       <PageNavBar />
       <Routes>
-        <Route path='/' element={<MainPage /> } />
-        <Route path='/experience' element={<Experience /> } />
-        <Route path='/projects' element={<Projects /> } />
+        <Route path='/portfolio' element={<MainPage /> } />
+        <Route path='/portfolio/experience' element={<Experience /> } />
+        <Route path='/portfolio/projects' element={<Projects /> } />
       </Routes>
     </BrowserRouter>
   ); 
