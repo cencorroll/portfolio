@@ -32,7 +32,7 @@ function PageNavBar(props) {
       </Typography>
       <Divider />
       <List>
-        <Link to='/'><Button>Home</Button></Link>
+        <Link to='/portfolio'><Button>Home</Button></Link>
         <Button
           variant='link'
           color='default'
@@ -72,7 +72,7 @@ function PageNavBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <Link to='/'
+            <Link to='/portfolio'
               style={{
                 textDecoration: 'none'
               }}
@@ -84,7 +84,7 @@ function PageNavBar(props) {
                 Home
               </Button>
             </Link>
-            <Link to='/experience'
+            <Link to='/portfolio/experience'
               style={{
                 textDecoration: 'none'
               }}
@@ -96,7 +96,7 @@ function PageNavBar(props) {
                 Experience
               </Button>
             </Link>
-            <Link to='/projects'
+            <Link to='/portfolio/projects'
               style={{
                 textDecoration: 'none'
               }}
