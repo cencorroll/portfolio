@@ -42,7 +42,6 @@ function PageNavBar(props) {
           <HashLink className='collapse-link' smooth to='#about'><Button>About Me</Button></HashLink>
           <HashLink className='collapse-link' smooth to='#experience'><Button>Experience</Button></HashLink>
           <HashLink className='collapse-link' smooth to='#projects'><Button>Projects</Button></HashLink>
-          <HashLink className='collapse-link' smooth to='#contact'><Button>Contact Me</Button></HashLink>
           <Button><a href="mailto:aharunddad@gmail.com" style={{ color: 'white' }}><EmailIcon /></a></Button>
         </Stack>
       </Box>
