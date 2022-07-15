@@ -84,7 +84,7 @@ export default function Projects() {
               </Typography>
             </div>
             <div className='project3-stuff'>
-              <iframe width="600" height="338" src="https://www.youtube.com/embed/UIBnOm6ddnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+              <iframe width="600" height="338" src="https://www.youtube.com/embed/UIBnOm6ddnc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowFullScreen"></iframe>
             </div>
           </div>
 

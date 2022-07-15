@@ -1,7 +1,4 @@
 import React from 'react'
-import { Button } from '@mui/material'
-import LibraryMusicIcon from '@mui/icons-material/LibraryMusic'
-import { BsSpotify } from "react-icons/bs"
 
 
 export default function About() {

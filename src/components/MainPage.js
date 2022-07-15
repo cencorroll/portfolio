@@ -4,6 +4,9 @@ import About from './About'
 import Experience from './Experience'
 import Footer from './Footer'
 
+import { DiReact, DiHtml5, DiJavascript, DiCss3, DiNodejsSmall, DiMongodb, DiDjango, DiPython, DiPostgresql, DiGit, DiGithubBadge, DiBootstrap, DiSass, DiNpm } from "react-icons/di"
+import { SiInsomnia, SiMaterialui, SiYarn } from "react-icons/si"
+
 export default function MainPage() {
   return (
     <>
@@ -14,7 +17,25 @@ export default function MainPage() {
           <br />
           <h2>Junior Software Engineer</h2>
           <br />
-          <p>Software Development Tools · HTML5 · Cascading Style Sheets (CSS) · JavaScript · React.js · Node.js · Express.js · MongoDB · Mongoose ODM · Django · Python (Programming Language) · PostgreSQL · Git · GitHub</p>
+          <ul className='welcome-icon-container'>
+            <li><DiReact size={45} className='welcome-icons' /><span className='list-text'>React.js</span></li>
+            <li><DiHtml5 size={45} className='welcome-icons' /><span className='list-text'>HTML5</span></li>
+            <li><DiJavascript size={45} className='welcome-icons' /><span className='list-text'>JavaScript</span></li>
+            <li><DiCss3 size={45} className='welcome-icons' /><span className='list-text'>CSS3</span></li>
+            <li><DiNodejsSmall size={45} className='welcome-icons' /><span className='list-text'>Node.js</span></li>
+            <li><DiMongodb size={45} className='welcome-icons' /><span className='list-text'>MongoDB</span></li>
+            <li><DiDjango size={45} className='welcome-icons' /><span className='list-text'>Django</span></li>
+            <li><DiPython size={45} className='welcome-icons' /><span className='list-text'>Python</span></li>
+            <li><DiPostgresql size={45} className='welcome-icons' /><span className='list-text'>PostgreSQL</span></li>
+            <li><DiGit size={45} className='welcome-icons' /><span className='list-text'>Git</span></li>
+            <li><DiGithubBadge size={45} className='welcome-icons' /><span className='list-text'>GitHub</span></li>
+            <li><SiInsomnia size={45} className='welcome-icons' /><span className='list-text'>Insomnia</span></li>
+            <li><DiBootstrap size={45} className='welcome-icons' /><span className='list-text'>React<br/>Bootstrap</span></li>
+            <li><SiMaterialui size={45} className='welcome-icons' /><span className='list-text'>Material UI</span></li>
+            <li><DiSass size={45} className='welcome-icons' /><span className='list-text'>Sass</span></li>
+            <li><DiNpm size={45} className='welcome-icons' /><span className='list-text'>NPM</span></li>
+            <li><SiYarn size={45} className='welcome-icons' /><span className='list-text'>Yarn</span></li>
+          </ul>
         </div>
         {/* <div
           className='main-graphic'
@@ -23,13 +44,13 @@ export default function MainPage() {
         </div> */}
       </section>
 
-    <About />
+      <About />
 
-    <Experience />
+      <Experience />
 
-    <Projects />
+      <Projects />
 
-    <Footer />
+      <Footer />
 
     </>
   )

@@ -18,6 +18,40 @@
   }
 }
 
+.welcome-icon-container {
+  max-width: 100%;
+  width: 120vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  .welcome-icons {
+    color: white;
+    margin: 20px;
+  }
+}
+
+.list-text {
+  width: 0;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+li:hover .list-text {
+  width: auto;
+}
+
+li {
+  list-style: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .list-text {
+    color: white;
+    text-align: center;
+  }
+}
+
 @media (max-width: 400px) {
   h1 {
     font-size: 3em;
