@@ -1,18 +1,25 @@
 .main-container {
   display: flex;
   flex-direction: row;
-  padding: 10em;
+  padding: 10%;
+  height: 100vh;
   .welcome {
-    font-size: 7em;
+    font-size: 8em;
     color: #3e3eff;
   }
   h2 {
     color: rgb(232, 118, 247);
   }
   .main-about {
-    width: 40%;
+    width: 80%;
     p {
       color: white;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 3em;
   }
 }

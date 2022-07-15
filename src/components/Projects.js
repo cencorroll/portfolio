@@ -1,19 +1,17 @@
 import React from 'react'
-import { Button, Grid, Accordion, AccordionSummary, AccordionDetails, Typography, Stack, Paper, Box } from '@mui/material'
-import { styled } from '@mui/material/styles'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import LinkIcon from '@mui/icons-material/Link';
+import { Button, Typography, Stack, Box } from '@mui/material'
+import LinkIcon from '@mui/icons-material/Link'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import Carousel from 'react-material-ui-carousel';
 
 export default function Projects() {
-
   return (
     <section id='projects' className='projects-container'>
+      <h1 style={{ color: 'black'}} className='hide'>h</h1>
       <h1>Projects</h1>
       <Box sx={{ width: '100%' }}>
         <Stack className='projects-stack' spacing={2}>
-          <div className='project-items'>
+
+          <div className='project1'>
             <div className='project-text'>
               <Typography className='heading'>Connect 4 Game</Typography>
               <Button
@@ -33,19 +31,12 @@ export default function Projects() {
                 Connect 4 using HTML, CSS and JavaScript. This projected enabled me to gain an in depth and practical understanding of ternary operators and using tools such as querySelect and array methods. The styling was done with CSS.
               </Typography>
             </div>
-            <div className='project-stuff'>
+            <div className='project1-stuff'>
               <img className='imgp1' alt='project 1 gif' src={require('../Projects-Files/Project1/Project1-GIF.gif')} />
             </div>
           </div>
 
-          <div className='project-items'>
-            <Carousel className='image-list' autoPlay={false}>
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchShow1.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchShow2.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/CrewIndex.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/CrewShow.png')} />
-            </Carousel>
+          <div className='project2'>
             <div className='project-text'>
               <Typography className='heading'>SpaceX Website</Typography>
               <Button
@@ -66,9 +57,12 @@ export default function Projects() {
                 My responsibilities were to create the main index pages for both launches and crews and to test all routes.
               </Typography>
             </div>
+
+                <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
+
           </div>
 
-          <div className='project-items'>
+          <div className='project3'>
             <div className='project-text'>
               <Typography className='heading'>Europe Travel Guide</Typography>
               <Button
@@ -89,19 +83,12 @@ export default function Projects() {
                 My deliverables included backend authorization and secure routes, frontend authorization and creating the homepage with a working search bar.
               </Typography>
             </div>
-            <div className='youtube'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/UIBnOm6ddnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <div className='project3-stuff'>
+              <iframe width="600" height="338" src="https://www.youtube.com/embed/UIBnOm6ddnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
             </div>
           </div>
 
-          <div className='project-items'>
-            <Carousel className='image-list' autoPlay={false}>
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchShow1.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchShow2.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/CrewIndex.png')} />
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/CrewShow.png')} />
-            </Carousel>
+          <div className='project4'>
             <div className='project-text'>
               <Typography className='heading'>Workout App</Typography>
               <Button
@@ -114,14 +101,16 @@ export default function Projects() {
                 variant='contained'
                 color='primary'
                 startIcon={<LinkIcon />}
-                href='https://spacex-cencorroll.netlify.app/'
+                href=''
                 style={{ margin: '20px' }}
               ></Button>
               <Typography className='project-description'>
-                Created a full stack application using Python and Django with the front-end being done in react. I did this solo and also used PostgreSQL.
-                This project was a workout and physical health app that involved creating my own API.
+                To be added... To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...
               </Typography>
             </div>
+
+              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
+              
           </div>
 
         </Stack>

@@ -4,7 +4,9 @@ import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography, Button, 
 import MenuIcon from '@mui/icons-material/Menu'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import EmailIcon from '@mui/icons-material/Email';
 import { HashLink } from 'react-router-hash-link'
+
 
 const drawerWidth = 240
 
@@ -41,6 +43,7 @@ function PageNavBar(props) {
           <HashLink className='collapse-link' smooth to='#experience'><Button>Experience</Button></HashLink>
           <HashLink className='collapse-link' smooth to='#projects'><Button>Projects</Button></HashLink>
           <HashLink className='collapse-link' smooth to='#contact'><Button>Contact Me</Button></HashLink>
+          <Button><a href="mailto:aharunddad@gmail.com" style={{ color: 'white' }}><EmailIcon /></a></Button>
         </Stack>
       </Box>
     </div>
@@ -118,22 +121,18 @@ function PageNavBar(props) {
                 Projects
               </Button>
             </HashLink>
-            
-            <HashLink smooth to='#contact'
-              style={{
-                textDecoration: 'none'
-              }}
-            >
-              <Button
-                style={{
-                  color: 'white'
-                }}>
-                Contact
-              </Button>
-            </HashLink>
 
           </Typography>
           <div className='icons-navbar'>
+
+          <Button
+              variant='link'
+              color='default'
+              className='link-icons'
+              startIcon={<EmailIcon />}
+              href='mailto:liuyuanmeng66@gmail.com'
+            />
+            
             <Button
               variant='link'
               color='default'
@@ -141,6 +140,7 @@ function PageNavBar(props) {
               startIcon={<GitHubIcon />}
               href='https://github.com/cencorroll'
             />
+
             <Button
               variant='link'
               color='default'
@@ -148,6 +148,7 @@ function PageNavBar(props) {
               startIcon={<LinkedInIcon />}
               href='https://www.linkedin.com/in/abdallahharun/'
             />
+
           </div>
         </Toolbar>
       </AppBar>
