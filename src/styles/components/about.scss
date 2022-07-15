@@ -1,10 +1,15 @@
 .about-page {
-  padding: 20vh 10vh 20vh 10vh;
+  padding: 10% 5%;
   .interest-item{
-    border: 1px solid white;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .music-stuff {
+    padding-top: 20px;
+    }
+    
   }
-  p, h2 {
+  p, h1 {
     color: white;
   }
 
