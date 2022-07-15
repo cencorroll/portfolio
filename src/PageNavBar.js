@@ -1,19 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
-import Divider from '@mui/material/Divider'
-import Drawer from '@mui/material/Drawer'
-import IconButton from '@mui/material/IconButton'
-import List from '@mui/material/List'
-import MenuIcon from '@mui/icons-material/Menu'
-import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
+import { AppBar, Box, Divider, Drawer, IconButton, List, Toolbar, Typography, Button, Stack } from '@mui/material'
 import { Link } from 'react-router-dom'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import ToggleColorMode from './helpers/DarkModeToggle'
+import MenuIcon from '@mui/icons-material/Menu'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import { HashLink } from 'react-router-hash-link'
+import { NavHashLink as NavLink } from 'react-router-hash-link'
 
 const drawerWidth = 240
 
@@ -26,30 +19,29 @@ function PageNavBar(props) {
   }
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Portfolio
-      </Typography>
-      <Divider />
-      <List>
-        <Link to='/portfolio'><Button>Home</Button></Link>
-        <Button
-          variant='link'
-          color='default'
-          className='link-icons'
-          startIcon={<GitHubIcon />}
-          href='https://github.com/cencorroll'
-        />
-        <Button
-          variant='link'
-          color='default'
-          className='link-icons'
-          startIcon={<LinkedInIcon />}
-          href='https://www.linkedin.com/in/abdallahharun/'
-        />
-        <ToggleColorMode />
-      </List>
-    </Box>
+    <div className='collapse-bar'>
+      <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+        <Typography 
+        style={{ color: 'white' }}
+        variant="h6" 
+        sx={{ my: 2 }}
+        >
+          PORTFOLIO
+        </Typography>
+        <Divider />
+        <Stack
+          direction="column"
+          justifyContent="center"
+          alignItems="stretch"
+          spacing={2}
+        >
+          <HashLink className='collapse-link' smooth to='/portfolio'>Home</HashLink>
+          <HashLink className='collapse-link' smooth to='/portfolio/about'>About Me</HashLink>
+          <HashLink className='collapse-link' smooth to='/portfolio/experience'><Button>Experience</Button></HashLink>
+          <HashLink className='collapse-link' smooth to='/portfolio/projects'><Button>Projects</Button></HashLink>
+        </Stack>
+      </Box>
+    </div>
   )
 
   const container = window !== undefined ? () => window().document.body : undefined
@@ -57,7 +49,7 @@ function PageNavBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar>
-        <Toolbar style={{ backgroundColor: 'black'}} className='navbar'>
+        <Toolbar style={{ backgroundColor: 'black' }} className='navbar'>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -72,7 +64,8 @@ function PageNavBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <Link to='/portfolio'
+
+            <HashLink smooth to='#home'
               style={{
                 textDecoration: 'none'
               }}
@@ -83,8 +76,22 @@ function PageNavBar(props) {
                 }}>
                 Home
               </Button>
-            </Link>
-            <Link to='/portfolio/experience'
+            </HashLink>
+
+            <HashLink smooth to='#about'
+              style={{
+                textDecoration: 'none'
+              }}
+            >
+              <Button
+                style={{
+                  color: 'white',
+                }}>
+                About Me
+              </Button>
+            </HashLink>
+
+            <HashLink smooth to='#experience'
               style={{
                 textDecoration: 'none'
               }}
@@ -95,8 +102,9 @@ function PageNavBar(props) {
                 }}>
                 Experience
               </Button>
-            </Link>
-            <Link to='/portfolio/projects'
+            </HashLink>
+
+            <HashLink smooth to='#projects'
               style={{
                 textDecoration: 'none'
               }}
@@ -107,7 +115,8 @@ function PageNavBar(props) {
                 }}>
                 Projects
               </Button>
-            </Link>
+            </HashLink>
+
           </Typography>
           <div className='icons-navbar'>
             <Button

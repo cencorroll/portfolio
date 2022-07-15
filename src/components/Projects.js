@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button, Grid, Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 export default function Projects() {
 
   return (
     <>
-      <div className='projects-container'>
+      <section id='projects' className='projects-container'>
         <h1>Projects</h1>
         <Accordion style={{ backgroundColor: 'black', color: 'grey', border: '1px solid', margin: '5px' }}>
           <AccordionSummary
@@ -19,6 +19,9 @@ export default function Projects() {
           <AccordionDetails>
             <Grid item xs={12} sm={6}>
               <div className='projects'>
+                <Typography>
+                  Connect 4 using HTML, CSS and JavaScript. This projected enabled me to gain an in depth and practical understanding of ternary operators and using tools such as querySelect and array methods. The styling was done with CSS.
+                </Typography>
                 <Button
                   variant='outlined'
                   href='https://cencorroll.github.io/Project1/'
@@ -37,10 +40,6 @@ export default function Projects() {
                 </div>
               </div>
             </Grid>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Typography>
           </AccordionDetails>
         </Accordion>
 
@@ -55,16 +54,21 @@ export default function Projects() {
           <AccordionDetails>
             <Grid item xs={12} sm={6}>
               <div className='projects'>
+                <Typography style={{ marginBottom: '30px' }}>
+                  Created a web app using front-end tools only. The website was one based on a public space-x api. This was done via paircoding with React.js and included heavy use of insomnia.
+                  My responsibilities were to create the main index pages for both launches and crews and to test all routes.
+                </Typography>
                 <Button
                   variant='outlined'
                   href='https://spacex-cencorroll.netlify.app/'
-                  style={{ margin: '20px' }}
+                  style={{ marginBottom: '30px' }}
                 >
                   Project 2 - Space X Website
                 </Button>
                 <Button
                   variant='contained'
                   href='https://github.com/cencorroll/project2'
+                  style={{ marginBottom: '30px' }}
                 >
                   GitHub Link
                 </Button>
@@ -77,10 +81,6 @@ export default function Projects() {
                 </div>
               </div>
             </Grid>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Typography>
           </AccordionDetails>
         </Accordion>
 
@@ -95,6 +95,10 @@ export default function Projects() {
           <AccordionDetails>
             <Grid item xs={12} sm={6}>
               <div className='projects'>
+                <Typography>
+                  Created a full stack web application with an Express API and using MongoDB paired with a React.js front-end. This was done as a group of three and included using schemas and secure routes. The project was a European holiday information website.
+                  My deliverables included backend authorization and secure routes, frontend authorization and creating the homepage with a working search bar.
+                </Typography>
                 <Button
                   variant='outlined'
                   href='https://europetravelguide.herokuapp.com/'
@@ -111,10 +115,6 @@ export default function Projects() {
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/UIBnOm6ddnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
               </div>
             </Grid>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Typography>
           </AccordionDetails>
         </Accordion>
 
@@ -129,6 +129,10 @@ export default function Projects() {
           <AccordionDetails>
             <Grid item xs={12} sm={6}>
               <div className='projects'>
+              <Typography>
+              Created a full stack application using Python and Django with the front-end being done in react. I did this solo and also used PostgreSQL.
+              This project was a workout and physical health app that involved creating my own API and also incorporating a second one.
+            </Typography>
                 <Button
                   variant='outlined'
                   href=''
@@ -144,13 +148,9 @@ export default function Projects() {
                 </Button>
               </div>
             </Grid>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Typography>
           </AccordionDetails>
         </Accordion>
-      </div>
+      </section>
     </>
   )
 }

@@ -10,6 +10,15 @@
   justify-content: space-between;
 }
 
+.collapse-bar {
+  background-color: black;
+  height: 100%;
+}
+
+.collapse-link {
+  text-decoration: none;
+}
+
 .navbar {
   background-color: #07070757;
 }
@@ -90,7 +99,24 @@
   .skills {
     color: rgb(232, 118, 247);
   }
-  h4 {
+  h4, h5 {
     color: #3e3eff;
+  }
+  .maintext {
+    font-size: 2em;
+  }
+}
+
+.about-page {
+  .interest-item{
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  p, h2 {
+    color: white;
+  }
+
+  .music-img {
+    width: 200px;
   }
 }
