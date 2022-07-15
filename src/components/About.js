@@ -1,11 +1,10 @@
 import React from 'react'
-import { Stack, Button, ImageListItem, ImageList } from '@mui/material'
-import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
-import { Link } from 'react-router-dom';
+import { Button } from '@mui/material'
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic'
 
 export default function About() {
   return (
-    <div className='about-page'>
+    <section id='about' className='about-page'>
       <div>
         <h2>About Me</h2>
         <p>Experienced Site Engineer with a demonstrated history of working in the civil engineering industry. Looking to introduce myself to the tech industry as a Junior Software Developer. <br />
@@ -14,51 +13,37 @@ export default function About() {
       </div>
 
       <div className='interests'>
-        <Stack
-          direction="column"
-          justifyContent="center"
-          alignItems="stretch"
-          spacing={2}
-        >
-          <div className='interest-item'>
-            <div className='music-stuff'>
-              <Button
-                variant='Link'
-                color='#26d93d'
-                className='link-icons'
-                startIcon={<LibraryMusicIcon />}
-                href='https://open.spotify.com/user/cencorolll?si=c79e9c75179e47bb'
-              />
-              <ImageList sx={{ width: 500, height: 170 }} cols={3} rowHeight={164}>
-                <ImageListItem >
-                  <a href='https://open.spotify.com/album/3Ul8Nyuzr2AEwE8iSrQepC?si=1s_rxa_tR5CsQ6LZOHF8Zw'>
-                  <img className='music-img' alt='maxwell now album' src='https://i.scdn.co/image/ab67616d0000b273d539670968d6772577efa2b7' />
-                  </a>
-                </ImageListItem>
-              </ImageList>
-            </div>
-            <div className='music-text'></div>
+        <div className='interest-item'>
+          <div className='music-stuff'>
+            <Button
+              variant='Link'
+              color='#26d93d'
+              startIcon={<LibraryMusicIcon />}
+              href='https://open.spotify.com/user/cencorolll?si=c79e9c75179e47bb'
+            />
+            <a href='https://open.spotify.com/album/3Ul8Nyuzr2AEwE8iSrQepC?si=1s_rxa_tR5CsQ6LZOHF8Zw'>
+              <img className='music-img' alt='maxwell now album' src='https://i.scdn.co/image/ab67616d0000b273d539670968d6772577efa2b7' />
+            </a>
           </div>
+          <div className='music-text'></div>
+        </div>
 
-          <div className='interest-item'>
-            <div className='theatre-text'></div>
-            <div className='theatre-stuff'></div>
-          </div>
+        <div className='interest-item'>
+          <div className='theatre-text'></div>
+          <div className='theatre-stuff'></div>
+        </div>
 
-          <div className='interest-item'>
-            <div className='exercise-stuff'></div>
-            <div className='exercise-text'></div>
-          </div>
+        <div className='interest-item'>
+          <div className='exercise-stuff'></div>
+          <div className='exercise-text'></div>
+        </div>
 
-          <div className='interest-item'>
-            <div className='gaming-text'></div>
-            <div className='gaming-stuff'></div>
-          </div>
-          
-        </Stack>
+        <div className='interest-item'>
+          <div className='gaming-text'></div>
+          <div className='gaming-stuff'></div>
+        </div>
+
       </div>
-
-
-    </div>
+    </section>
   )
 }

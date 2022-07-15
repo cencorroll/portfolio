@@ -1,9 +1,9 @@
 import './App.css'
-import './main.scss'
+import './styles/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import PageNavBar from './PageNavBar'
+import PageNavBar from './components/PageNavBar'
 import { HashLink as Link } from 'react-router-hash-link'
 import MainPage from './components/MainPage'
 // import Projects from './components/Projects';
@@ -30,7 +30,7 @@ function App() {
       <Link to='#about' smooth></Link>
       <Link to='#experience' smooth></Link>
       <Link to='#projects' smooth></Link>
-      <Link to='#contact' smooth></Link>
+      <Link to='#footer' smooth></Link>
 
     </BrowserRouter>
   );

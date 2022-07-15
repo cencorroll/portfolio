@@ -1,12 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { AppBar, Box, Divider, Drawer, IconButton, List, Toolbar, Typography, Button, Stack } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography, Button, Stack } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import { HashLink } from 'react-router-hash-link'
-import { NavHashLink as NavLink } from 'react-router-hash-link'
 
 const drawerWidth = 240
 
@@ -35,10 +33,14 @@ function PageNavBar(props) {
           alignItems="stretch"
           spacing={2}
         >
-          <HashLink className='collapse-link' smooth to='/portfolio'>Home</HashLink>
-          <HashLink className='collapse-link' smooth to='/portfolio/about'>About Me</HashLink>
-          <HashLink className='collapse-link' smooth to='/portfolio/experience'><Button>Experience</Button></HashLink>
-          <HashLink className='collapse-link' smooth to='/portfolio/projects'><Button>Projects</Button></HashLink>
+
+          {/* I left the mui button tag even though I don't need it because I just like the styling more. */}
+
+          <HashLink className='collapse-link' smooth to='#home'><Button>Home</Button></HashLink>
+          <HashLink className='collapse-link' smooth to='#about'><Button>About Me</Button></HashLink>
+          <HashLink className='collapse-link' smooth to='#experience'><Button>Experience</Button></HashLink>
+          <HashLink className='collapse-link' smooth to='#projects'><Button>Projects</Button></HashLink>
+          <HashLink className='collapse-link' smooth to='#contact'><Button>Contact Me</Button></HashLink>
         </Stack>
       </Box>
     </div>
@@ -47,7 +49,7 @@ function PageNavBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box className='navbar-container' sx={{ display: 'flex' }}>
       <AppBar>
         <Toolbar style={{ backgroundColor: 'black' }} className='navbar'>
           <IconButton
@@ -114,6 +116,19 @@ function PageNavBar(props) {
                   color: 'white'
                 }}>
                 Projects
+              </Button>
+            </HashLink>
+            
+            <HashLink smooth to='#contact'
+              style={{
+                textDecoration: 'none'
+              }}
+            >
+              <Button
+                style={{
+                  color: 'white'
+                }}>
+                Contact
               </Button>
             </HashLink>
 
