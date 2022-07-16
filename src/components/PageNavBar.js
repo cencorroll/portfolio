@@ -129,7 +129,7 @@ function PageNavBar(props) {
               color='default'
               className='link-icons'
               startIcon={<EmailIcon />}
-              href='mailto:liuyuanmeng66@gmail.com'
+              href='mailto:aharundd@gmail.com'
             />
             
             <Button
