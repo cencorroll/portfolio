@@ -15,6 +15,11 @@ export default function About() {
         <h1>Interests</h1>
         <div className='interest-item'>
           <div className='music-stuff'>
+            <div className='music-info'>
+              <h1>MUSIC</h1>
+              <p>I listen to music almost all the time, especially while I'm working. I am a big of fan genres like R&B, Neosoul and Rap</p>
+              <p>Click on the images</p>
+            </div>
             <a href='https://open.spotify.com/album/3Ul8Nyuzr2AEwE8iSrQepC?si=1s_rxa_tR5CsQ6LZOHF8Zw'>
               <img className='music-img' alt='maxwell now album' src='https://i.scdn.co/image/ab67616d0000b273d539670968d6772577efa2b7' />
             </a>

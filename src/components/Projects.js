@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 export default function Projects() {
   return (
     <section id='projects' className='projects-container'>
-      <h1 style={{ color: 'black'}} className='hide'>h</h1>
+      <h1 style={{ color: 'black' }} className='hide'>h</h1>
       <h1>Projects</h1>
       <Box sx={{ width: '100%' }}>
         <Stack className='projects-stack' spacing={2}>
@@ -28,7 +28,7 @@ export default function Projects() {
                 style={{ margin: '20px' }}
               ></Button>
               <Typography className='project-description'>
-                Connect 4 using HTML, CSS and JavaScript. This projected enabled me to gain an in depth and practical understanding of ternary operators and using tools such as querySelect and array methods. The styling was done with CSS.
+                Connect 4 using HTML, CSS and JavaScript. This projected enabled me to gain an in depth and practical understanding of ternary operators and using tools such as querySelect and array methods. The styling was done with CSS. This was a solo project with a timeframe of 7 days.
               </Typography>
             </div>
             <div className='project1-stuff'>
@@ -53,12 +53,12 @@ export default function Projects() {
                 style={{ margin: '20px' }}
               ></Button>
               <Typography className='project-description'>
-                Created a web app using front-end tools only. The website was one based on a public space-x api. This was done via paircoding with React.js and included heavy use of insomnia.
+                Created a web app using front-end tools only. The website was one based on a public space-x api. This was done via paircoding with React.js over 1.5 days and included heavy use of insomnia.
                 My responsibilities were to create the main index pages for both launches and crews and to test all routes.
               </Typography>
             </div>
 
-                <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
+            <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
 
           </div>
 
@@ -79,7 +79,7 @@ export default function Projects() {
                 style={{ margin: '20px' }}
               ></Button>
               <Typography>
-                Created a full stack web application with an Express API and using MongoDB paired with a React.js front-end. This was done as a group of three and included using schemas and secure routes. The project was a European holiday information website.
+                Created a full stack web application with an Express API and using MongoDB paired with a React.js front-end. This was done as a group of three over 8 days and included using schemas and secure routes. The project was a European holiday information website.
                 My deliverables included backend authorization and secure routes, frontend authorization and creating the homepage with a working search bar.
               </Typography>
             </div>
@@ -105,12 +105,12 @@ export default function Projects() {
                 style={{ margin: '20px' }}
               ></Button>
               <Typography className='project-description'>
-                To be added... To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...To be added...
+                Created a full stack application using Python and Django with the front-end in React and incorporating PostgreSQL. This project was a workout and physical health app that involved creating my own API and also incorporating a second one. It was a solo project with a timeframe of 9 days.
               </Typography>
             </div>
 
-              <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
-              
+            <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
+
           </div>
 
         </Stack>
