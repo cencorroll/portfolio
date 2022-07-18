@@ -46,9 +46,9 @@ export default function MainPage() {
 
       <About />
 
-      <Experience />
-
       <Projects />
+
+      <Experience />
 
       <Footer />
 

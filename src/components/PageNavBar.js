@@ -95,19 +95,6 @@ function PageNavBar(props) {
               </Button>
             </HashLink>
 
-            <HashLink smooth to='#experience'
-              style={{
-                textDecoration: 'none'
-              }}
-            >
-              <Button
-                style={{
-                  color: 'white'
-                }}>
-                Experience
-              </Button>
-            </HashLink>
-
             <HashLink smooth to='#projects'
               style={{
                 textDecoration: 'none'
@@ -118,6 +105,19 @@ function PageNavBar(props) {
                   color: 'white'
                 }}>
                 Projects
+              </Button>
+            </HashLink>
+
+            <HashLink smooth to='#experience'
+              style={{
+                textDecoration: 'none'
+              }}
+            >
+              <Button
+                style={{
+                  color: 'white'
+                }}>
+                Experience
               </Button>
             </HashLink>
 
