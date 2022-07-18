@@ -24,7 +24,7 @@ export default function Projects() {
                 variant='contained'
                 color='primary'
                 startIcon={<LinkIcon />}
-                href='https://cencorroll.github.io/project1/'
+                href='https://cencorroll.github.io/Project1/'
                 style={{ margin: '20px' }}
               ></Button>
               <Typography className='project-description'>
@@ -68,7 +68,7 @@ export default function Projects() {
               <Button
                 variant='contained'
                 startIcon={<GitHubIcon />}
-                href='https://github.com/cencorroll/project3'
+                href='https://github.com/cencorroll/Project3'
               >
               </Button>
               <Button
