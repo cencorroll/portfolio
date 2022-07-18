@@ -38,19 +38,21 @@ export default function About() {
         </div>
 
         <div className='interest-item'>
-          <div className='theatre-text'></div>
+          <div className='theatre-text'>Theatre to go here</div>
           <div className='theatre-stuff'></div>
         </div>
 
         <div className='interest-item'>
-          <div className='exercise-stuff'></div>
+          <div className='exercise-stuff'>Exercise to go here</div>
           <div className='exercise-text'></div>
         </div>
 
         <div className='interest-item'>
-          <div className='gaming-text'></div>
+          <div className='gaming-text'>Art and Exhibitions to go here</div>
           <div className='gaming-stuff'></div>
         </div>
+
+        <h3 style={{ textAlign: 'center', margin: '20px' }}>borders to be removed</h3>
 
       </div>
     </section>
