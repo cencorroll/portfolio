@@ -5,7 +5,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import PageNavBar from './components/PageNavBar'
 import { HashLink as Link } from 'react-router-hash-link'
-import MainPage from './components/MainPage'
+import Home from './components/Home'
 // import Projects from './components/Projects';
 // import Experience from './components/Experience';
 // import About from './components/About';
@@ -21,7 +21,7 @@ function App() {
       <PageNavBar />
 
       <Routes>
-        <Route path='/portfolio' element={<MainPage />} />
+        <Route path='/portfolio' element={<Home />} />
         {/* <Route path='/portfolio/about' element={<About />} />
         <Route path='/portfolio/experience' element={<Experience />} />
         <Route path='/portfolio/projects' element={<Projects />} /> */}

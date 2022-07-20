@@ -34,6 +34,7 @@ export default function Projects() {
             <div className='project1-stuff'>
               <img className='imgp1' alt='project 1 gif' src={require('../Projects-Files/Project1/Project1-GIF.gif')} />
             </div>
+
           </div>
 
           <div className='project2'>
@@ -90,7 +91,7 @@ export default function Projects() {
 
           <div className='project4'>
             <div className='project-text'>
-              <Typography className='heading'>Workout App</Typography>
+              <Typography className='heading'>Fita Database</Typography>
               <Button
                 variant='contained'
                 startIcon={<GitHubIcon />}
@@ -101,7 +102,7 @@ export default function Projects() {
                 variant='contained'
                 color='primary'
                 startIcon={<LinkIcon />}
-                href=''
+                href='https://fita-database.herokuapp.com/'
                 style={{ margin: '20px' }}
               ></Button>
               <Typography className='project-description'>
@@ -109,10 +110,11 @@ export default function Projects() {
               </Typography>
             </div>
 
-            <img className='imgp2' alt='launch index' src={require('../Projects-Files/Project2/LaunchIndex.png')} />
+            <div className='project4-stuff'>
+              <img className='imgp1' alt='project 4 gif' src={require('../Projects-Files/Project4/Project4ScreenRecording.gif')} />
+            </div>
 
           </div>
-
         </Stack>
       </Box>
     </section>
