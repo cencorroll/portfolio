@@ -37,11 +37,6 @@ export default function MainPage() {
             <li><SiYarn size={45} className='welcome-icons' /><span className='list-text'>Yarn</span></li>
           </ul>
         </div>
-        {/* <div
-          className='main-graphic'
-        >
-          <img alt='homepage background' src={require('../Projects-Files/Portfolio/walkator-background.jpeg')} />
-        </div> */}
       </section>
 
       <About />

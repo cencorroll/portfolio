@@ -1,39 +1,56 @@
 .about-page {
+  max-width: 100%;
   padding: 10% 5%;
-  .interest-item{
+  .about-text {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    color: white;
-    height: 400px;
-    .music-stuff {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    .music-img {
-      width: 240px;
-      padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+    .theatre-item {
+      padding-top: 60px;
+      .theatre-text {
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .theatre-stuff {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+        img {
+        max-width: 100%;
+        width: 250px;
+        height: 150px;
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
       }
     }
-    .theatre-stuff {
+    .music {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 20px;
-      img {
-      width: 250px;
-      height: 150px;
-      margin: 20px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      flex-direction: column;
+      align-items: center;
+      .music-stuff {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .music-img {
+          max-width: 100%;
+          width: 250px;
+          padding: 20px;
+        }
       }
     }
-    
   }
   p, h1, h3 {
+    max-width: 100%;
     color: white;
   }
-
-  
-}
