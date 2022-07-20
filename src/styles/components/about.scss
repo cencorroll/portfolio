@@ -2,17 +2,24 @@
   max-width: 100%;
   padding: 10% 5%;
   .about-text {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 800px;
     margin: 0 auto;
+    .text {
+      font-family: 'Inconsolata', monospace;
+      font-size: larger;
+    }
   }
     .theatre-item {
       padding-top: 60px;
-      .theatre-text {
+      .text {
         max-width: 100%;
-        width: 80%;
+        width: 800px;
         margin: 0 auto;
+        font-family: 'Inconsolata', monospace;
+        font-size: larger;
       }
       .theatre-stuff {
         max-width: 100%;
@@ -47,6 +54,11 @@
           width: 250px;
           padding: 20px;
         }
+      }
+      .text {
+        width: 800px;
+        font-family: 'Inconsolata', monospace;
+        font-size: larger;
       }
     }
   }

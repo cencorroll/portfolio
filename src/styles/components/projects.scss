@@ -1,5 +1,6 @@
 .projects-container {
   max-width: 100%;
+  font-family: 'Inconsolata', monospace;
   .projects-stack {
     display: flex;
     flex-direction: column;
@@ -13,11 +14,13 @@
   }
   .heading {
     color: rgb(232, 118, 247);
+    font-family: 'Inconsolata', monospace;
   }
 }
 .project1, .project2, .project3, .project4 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 2px solid grey;
   max-width: 100%;
@@ -46,9 +49,14 @@
 
 .project3-stuff {
   width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-description {
   padding-right: 20px;
   color: white;
+  font-family: 'Inconsolata', monospace;
+  font-size: larger;
 }

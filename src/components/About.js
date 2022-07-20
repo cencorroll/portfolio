@@ -6,19 +6,19 @@ export default function About() {
   return (
     <section id='about' className='about-page'>
       <div className='about-text'>
-        <Typography style={{ marginBottom: '50px', textAlign: 'center', fontSize: '2.5em', color: '#3e3eff' }}>About Me</Typography>
-        <Typography style={{ marginBottom: '50px', textAlign: 'center' }}>Hi! I'm Abdallah. I am a Junior Software Engineer and former Civil Site Engineer.</Typography>
-        <Typography style={{ marginBottom: '50px', textAlign: 'center' }}>  I was in construction for 4 years before being interested in tech and starting beginner intro classes into coding.</Typography>
-        <Typography style={{ marginBottom: '50px', textAlign: 'center' }}>I decided to enrolled in a Software Engineering Immersive course with General Assembly in order to learn new skills in an ever expanding industry and to also delve deeper in my interests. I have gained an insight into what it takes to navigate problems as a web developer and the hard skills it takes to build almost anything.</Typography>
-        <Typography style={{ marginBottom: '60px', textAlign: 'center' }}>I have enjoyed the creative process behind writing code. The relationships between things was not something I was familiar with but I've grown to be curious about it more. I am excited to see where this takes me and also what else I can create.</Typography>
+        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center', fontSize: '2.5em', color: '#3e3eff' }}>About Me</Typography>
+        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>Hi! I'm Abdallah. I am a Junior Software Engineer and former Civil Site Engineer.</Typography>
+        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>  I was in construction for 4 years before being interested in tech and starting beginner intro classes into coding.</Typography>
+        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>I decided to enrolled in a Software Engineering Immersive course with General Assembly in order to learn new skills in an ever expanding industry and to also delve deeper in my interests. I have gained an insight into what it takes to navigate problems as a web developer and the hard skills it takes to build almost anything.</Typography>
+        <Typography className='text' style={{ marginBottom: '60px', textAlign: 'center' }}>I have enjoyed the creative process behind writing code. The relationships between things was not something I was familiar with but I've grown to be curious about it more. I am excited to see where this takes me and also what else I can create.</Typography>
       </div>
 
       <hr style={{ color: 'darkgrey' }} />
 
       <div className='interests'>
         <div className='music'>
-          <Typography style={{ textAlign: 'center', marginTop: '60px', marginBottom: '40px', fontSize: '2.5em', color: '#3e3eff' }}>Interests</Typography>
-          <Typography className='music-text' style={{ marginBottom: '50px', textAlign: 'center', width: '800px' }}>
+          <Typography className='text' style={{ textAlign: 'center', marginTop: '60px', marginBottom: '40px', fontSize: '2.5em', color: '#3e3eff' }}>Interests</Typography>
+          <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>
             Music is definitely an important hobby of mine. I listen to it while working because of how much it helps me concentrate. I also love attending concerts and live performances.
           </Typography>
           <div className='music-stuff'>
@@ -43,7 +43,7 @@ export default function About() {
         <hr style={{ color: 'darkgrey' }} />
 
         <div className='theatre-item'>
-          <Typography className='theatre-text' style={{ fontSize: '1em', textAlign: 'center' }}>I love attending plays. It's how visual stage actors can be that is a big thing for me. Really good plays can also be very creative with the space they work in. My favorite theatre at the moment is Bush Theatre in Shepherds Bush, West London</Typography>
+          <Typography className='text' style={{ textAlign: 'center' }}>I love attending plays. It's how visual stage actors can be that is a big thing for me. Really good plays can also be very creative with the space they work in. My favorite theatre at the moment is Bush Theatre in Shepherds Bush, West London</Typography>
           <ul className='theatre-stuff'>
             <li className='theatre-img'>
               <img alt='favour play' src='http://www.cleanbreak.org.uk/media/images/Favour_Homepage_Slide.png' />
