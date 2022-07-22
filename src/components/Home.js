@@ -13,7 +13,7 @@ export default function MainPage() {
       <section id='home' className='main-container'>
         <div className='main-about'>
           <h2>Hello! I am</h2>
-          <h1 className='welcome'>abdallah_harun</h1>
+          <h1 className='welcome'>Abdallah Harun</h1>
           <br />
           <h2>Junior Software Engineer</h2>
           <br />
