@@ -18,11 +18,10 @@ export default function Experience() {
           Package: <p className='skills'>Yarn, NPM</p>
           Other: <p className='skills'>Git, GitHub, version control, authentication, pair-programming, RESTful APIs, debugging</p><br />
         </span>
-        <p>Soft Skills: <br/>
-          Communication/Leadership - Delegating and reviewing tasks with group members.<br />
+        <h4 className='maintext'>Soft Skills</h4>
+          <p>Communication/Leadership - Delegating and reviewing tasks with group members.<br />
           Collaboration - Multiple app projects and pair coding. <br />
-          Timekeeping - Reviewing and setting deadlines. Prioritising work to achieve set deadlines.<br /><br />
-        </p>
+          Timekeeping - Reviewing and setting deadlines. Prioritising work to achieve set deadlines.</p><br /><br />
         <h4>Previous experience</h4>
         <h6>Site Engineer<br />
           September 2018 - March 2022<br />

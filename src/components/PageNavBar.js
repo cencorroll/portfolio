@@ -122,8 +122,8 @@ function PageNavBar(props) {
             </HashLink>
 
           </Typography>
-          <div className='icons-navbar'>
 
+          <div className='icons-navbar'>
           <Button
               variant='link'
               color='default'

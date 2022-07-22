@@ -43,7 +43,7 @@ export default function About() {
         <hr style={{ color: 'darkgrey' }} />
 
         <div className='theatre-item'>
-          <Typography className='text' style={{ textAlign: 'center' }}>I love attending plays. It's how visual stage actors can be that is a big thing for me. Really good plays can also be very creative with the space they work in. My favorite theatre at the moment is Bush Theatre in Shepherds Bush, West London</Typography>
+          <Typography className='text' style={{ textAlign: 'center' }}>I love attending plays. I enjoy live perfomances in general and stage plays can be a great experience. Really good plays can also be very creative with the space they work in. My favorite theatre at the moment is Bush Theatre in Shepherds Bush, West London.</Typography>
           <ul className='theatre-stuff'>
             <li className='theatre-img'>
               <img alt='favour play' src='http://www.cleanbreak.org.uk/media/images/Favour_Homepage_Slide.png' />
