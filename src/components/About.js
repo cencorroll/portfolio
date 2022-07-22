@@ -63,6 +63,7 @@ export default function About() {
             </li>
           </ul>
         </div>
+        <hr style={{ color: 'darkgrey' }} />
 
       </div>
     </section>

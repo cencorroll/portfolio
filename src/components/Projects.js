@@ -6,7 +6,6 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 export default function Projects() {
   return (
     <section id='projects' className='projects-container'>
-      <h1 style={{ color: 'black' }} className='hide'>h</h1>
       <h1>Projects</h1>
       <Box sx={{ width: '100%' }}>
         <Stack className='projects-stack' spacing={2}>
