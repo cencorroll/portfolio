@@ -5,7 +5,7 @@ import Experience from './Experience'
 import Footer from './Footer'
 
 import { DiReact, DiHtml5, DiJavascript, DiCss3, DiNodejsSmall, DiMongodb, DiDjango, DiPython, DiPostgresql, DiGit, DiGithubBadge, DiBootstrap, DiSass, DiNpm } from "react-icons/di"
-import { SiInsomnia, SiMaterialui, SiYarn } from "react-icons/si"
+import { SiInsomnia, SiMaterialui, SiYarn, SiDocker } from "react-icons/si"
 
 export default function MainPage() {
   return (
@@ -23,6 +23,7 @@ export default function MainPage() {
             <li><DiJavascript size={45} className='welcome-icons' /><span className='list-text'>JavaScript</span></li>
             <li><DiCss3 size={45} className='welcome-icons' /><span className='list-text'>CSS3</span></li>
             <li><DiNodejsSmall size={45} className='welcome-icons' /><span className='list-text'>Node.js</span></li>
+            <li><SiDocker size={45} className='welcome-icons' /><span className='list-text'>Docker</span></li>
             <li><DiMongodb size={45} className='welcome-icons' /><span className='list-text'>MongoDB</span></li>
             <li><DiDjango size={45} className='welcome-icons' /><span className='list-text'>Django</span></li>
             <li><DiPython size={45} className='welcome-icons' /><span className='list-text'>Python</span></li>
@@ -31,10 +32,10 @@ export default function MainPage() {
             <li><DiGithubBadge size={45} className='welcome-icons' /><span className='list-text'>GitHub</span></li>
             <li><SiInsomnia size={45} className='welcome-icons' /><span className='list-text'>Insomnia</span></li>
             <li><DiBootstrap size={45} className='welcome-icons' /><span className='list-text'>React<br/>Bootstrap</span></li>
-            <li><SiMaterialui size={45} className='welcome-icons' /><span className='list-text'>Material UI</span></li>
             <li><DiSass size={45} className='welcome-icons' /><span className='list-text'>Sass</span></li>
             <li><DiNpm size={45} className='welcome-icons' /><span className='list-text'>NPM</span></li>
             <li><SiYarn size={45} className='welcome-icons' /><span className='list-text'>Yarn</span></li>
+            <li><SiMaterialui size={45} className='welcome-icons' /><span className='list-text'>Material UI</span></li>
           </ul>
         </div>
       </section>
