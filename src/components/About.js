@@ -1,17 +1,17 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 
-
 export default function About() {
   return (
     <section id='about' className='about-page'>
       <div className='about-text'>
-        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>Hi! I'm Abdallah. I am a Junior Software Engineer, Data Analyst and former Civil Site Engineer.</Typography>
+        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center', fontSize: '2.5em', color: '#3e3eff' }}><p className='number-about' style={{color:'#64FFDA'}}>01. </p>About Me</Typography>
+        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>Hi! I'm Abdallah. I am a Junior Software Engineer and former Civil Site Engineer.</Typography>
       </div>
 
       <hr style={{ color: 'darkgrey' }} />
 
-      <div className='interests'>
+      {/* <div className='interests'>
         <div className='music'>
           <Typography className='text' style={{ textAlign: 'center', marginTop: '60px', marginBottom: '40px', fontSize: '2.5em', color: '#3e3eff' }}>Interests</Typography>
           <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>
@@ -34,7 +34,7 @@ export default function About() {
               <img className='music-img' alt='la blue astronne blue phases album' src='https://i.scdn.co/image/ab67616d0000b2739dbd58edeeb02d855c38d6be' />
             </a>
           </div>
-        </div>
+        </div> */}
 
         <hr style={{ color: 'darkgrey' }} />
 
