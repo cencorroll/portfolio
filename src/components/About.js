@@ -6,11 +6,7 @@ export default function About() {
   return (
     <section id='about' className='about-page'>
       <div className='about-text'>
-        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center', fontSize: '2.5em', color: '#3e3eff' }}>About Me</Typography>
-        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>Hi! I'm Abdallah. I am a Junior Software Engineer and former Civil Site Engineer.</Typography>
-        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>  I was in construction for 4 years before being interested in tech and starting beginner intro classes into coding.</Typography>
-        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>I decided to enrolled in a Software Engineering Immersive course with General Assembly in order to learn new skills in an ever expanding industry and to also delve deeper in my interests. I have gained an insight into what it takes to navigate problems as a web developer and the hard skills it takes to build almost anything.</Typography>
-        <Typography className='text' style={{ marginBottom: '60px', textAlign: 'center' }}>I have enjoyed the creative process behind writing code. The relationships between things was not something I was familiar with but I've grown to be curious about it more. I am excited to see where this takes me and also what else I can create.</Typography>
+        <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>Hi! I'm Abdallah. I am a Junior Software Engineer, Data Analyst and former Civil Site Engineer.</Typography>
       </div>
 
       <hr style={{ color: 'darkgrey' }} />
