@@ -11,8 +11,8 @@ export default function About() {
 
       <hr style={{ color: 'darkgrey' }} />
 
-      {/* <div className='interests'>
-        <div className='music'>
+      <div className='interests'>
+        {/* <div className='music'>
           <Typography className='text' style={{ textAlign: 'center', marginTop: '60px', marginBottom: '40px', fontSize: '2.5em', color: '#3e3eff' }}>Interests</Typography>
           <Typography className='text' style={{ marginBottom: '50px', textAlign: 'center' }}>
             Music is definitely an important hobby of mine. I listen to it while working because of how much it helps me concentrate. I also love attending concerts and live performances.
